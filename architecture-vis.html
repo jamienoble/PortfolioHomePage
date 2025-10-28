@@ -34,88 +34,9 @@
             </p>
         </div>
 
-        <!-- Featured Projects -->
-        <div class="max-w-7xl mx-auto space-y-16">
-            <!-- Large Project 1 -->
-            <div class="group relative overflow-hidden rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white/30 transition-all duration-300">
-                <div class="grid md:grid-cols-2 gap-8 p-8">
-                    <div class="aspect-video md:aspect-square bg-gradient-to-br from-blue-900/30 to-purple-900/30 rounded-xl flex items-center justify-center">
-                        <div class="text-8xl">🏢</div>
-                    </div>
-                    <div class="flex flex-col justify-center">
-                        <h2 class="text-4xl font-bold mb-4">Modern Office Complex</h2>
-                        <p class="text-white/70 text-lg mb-6">
-                            Commercial development featuring contemporary design with glass facades and sustainable elements. Complete with exterior and interior visualization.
-                        </p>
-                        <div class="flex gap-3 flex-wrap mb-6">
-                            <span class="px-4 py-2 text-sm bg-white/10 rounded-full">Exterior Renders</span>
-                            <span class="px-4 py-2 text-sm bg-white/10 rounded-full">Interior Design</span>
-                            <span class="px-4 py-2 text-sm bg-white/10 rounded-full">3ds Max</span>
-                            <span class="px-4 py-2 text-sm bg-white/10 rounded-full">V-Ray</span>
-                        </div>
-                        <button class="inline-flex items-center gap-2 px-8 py-3 bg-white/10 border-2 border-white/30 rounded-full hover:bg-white/20 hover:border-white/60 transition-all w-fit">
-                            View Project →
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Large Project 2 -->
-            <div class="group relative overflow-hidden rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white/30 transition-all duration-300">
-                <div class="grid md:grid-cols-2 gap-8 p-8">
-                    <div class="order-2 md:order-1 flex flex-col justify-center">
-                        <h2 class="text-4xl font-bold mb-4">Luxury Residential Villa</h2>
-                        <p class="text-white/70 text-lg mb-6">
-                            High-end residential property with infinity pool, minimalist architecture, and panoramic views. Day and night renders with atmospheric lighting.
-                        </p>
-                        <div class="flex gap-3 flex-wrap mb-6">
-                            <span class="px-4 py-2 text-sm bg-white/10 rounded-full">Residential</span>
-                            <span class="px-4 py-2 text-sm bg-white/10 rounded-full">Landscape</span>
-                            <span class="px-4 py-2 text-sm bg-white/10 rounded-full">Lumion</span>
-                            <span class="px-4 py-2 text-sm bg-white/10 rounded-full">Corona</span>
-                        </div>
-                        <button class="inline-flex items-center gap-2 px-8 py-3 bg-white/10 border-2 border-white/30 rounded-full hover:bg-white/20 hover:border-white/60 transition-all w-fit">
-                            View Project →
-                        </button>
-                    </div>
-                    <div class="order-1 md:order-2 aspect-video md:aspect-square bg-gradient-to-br from-amber-900/30 to-orange-900/30 rounded-xl flex items-center justify-center">
-                        <div class="text-8xl">🏠</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Grid of Smaller Projects -->
-            <div class="grid md:grid-cols-3 gap-8 mt-16">
-                <div class="rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-white/30 transition-all">
-                    <div class="aspect-video bg-gradient-to-br from-green-900/30 to-teal-900/30 flex items-center justify-center">
-                        <div class="text-6xl">🌳</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Urban Park Development</h3>
-                        <p class="text-white/70 text-sm">Public space visualization with landscaping</p>
-                    </div>
-                </div>
-
-                <div class="rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-white/30 transition-all">
-                    <div class="aspect-video bg-gradient-to-br from-red-900/30 to-pink-900/30 flex items-center justify-center">
-                        <div class="text-6xl">🏛️</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Cultural Center</h3>
-                        <p class="text-white/70 text-sm">Community building with modern amenities</p>
-                    </div>
-                </div>
-
-                <div class="rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-white/30 transition-all">
-                    <div class="aspect-video bg-gradient-to-br from-indigo-900/30 to-blue-900/30 flex items-center justify-center">
-                        <div class="text-6xl">🏗️</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Mixed-Use Complex</h3>
-                        <p class="text-white/70 text-sm">Retail and residential integration</p>
-                    </div>
-                </div>
-            </div>
+        <!-- Portfolio Grid (dynamically populated) -->
+        <div id="portfolio-list" data-category="architecture-vis" class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <p class="text-center text-white/70">Loading projects…</p>
         </div>
 
         <!-- CTA Section -->
@@ -127,5 +48,6 @@
             </a>
         </div>
     </div>
+    <script src="content-loader.js"></script>
 </body>
 </html>
